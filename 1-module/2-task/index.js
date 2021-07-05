@@ -1,17 +1,17 @@
 
 function isValid(name) {
-  if ((name.includes (' ')) || (name.length <= 4) || (name == 0 ))
-  {
+  if (name == null || name == '' || name.includes(' ') || name.length < 4) {
     return false;
   }
-  else
-  {
-    return true;
-  }
+  return true;
 }
 
 
-//function allLetter(uname)
+//if (condition) {
+//     statement_1;
+// } else {
+//     statement_2;
+// }
 // {
 //   var letters = /^[A-Za-z]+$/;
 //   if(uname.value.match(letters))
